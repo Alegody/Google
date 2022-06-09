@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* este pertenece al "a" marcado abajo */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ////// */
+header {
+    width: 100%;
+    height: 60px;
+}
+
+/* contenido del nav al lado derecho(final) */
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-seccion-derecha {
+    width: 250px;
+    /* auto para que agarre el tamaño del padre */
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* este es el a marcado */
+nav .nav-seccion-derecha a{
+    margin-right: 10px;
+    color: #000000;
+}
+
+nav .nav-seccion-derecha .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+nav .nav-seccion-derecha img {
+    /* hacer redondo: */
+    border-radius: 50px;
+    /* agregar mas espacio hacia la izquierda para alejar el icono de al lado */
+    margin-left: 10px;
+}
+
+/* subrayar texto al colocar mouse encima */
+nav .nav-seccion-derecha a:hover{
+    text-decoration: underline;
+}
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 300px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    /* quitamos el borde del cuadro de texto */
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover {
+    /* colocar sombreado */
+    box-shadow: 0 1px 6px 0 #20212447;
+    /* lo hacemos un poco mas oscuro */
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    /* hacer que no se repita */
+    background-repeat: no-repeat;
+    /* posicionar en el centro */
+    background-position: center;
+    background-size: contain;
+    /* opacidad de la lupa para que sea gris y no negra */
+    opacity: 0.4;
+    /* tamaño del icono */
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    /* hacer que no se repita */
+    background-repeat: no-repeat;
+    /* posicionar en el centro */
+    background-position: center;
+    background-size: contain;
+    /* tamaño del icono */
+    width: 18px;
+    height: 18px;
+    /* para que salga la manito al colocar el mouse encima: */
+    cursor: pointer;
+}
+
+/* tamaño de botones y  */
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+/* colocar los botones uno al lado del otro */
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    /* darle altura al boton  */
+    height: 36px;
+    /* colocar color de fondo */
+    background-color: #f2f2f2;
+    /* que no tenga borde */
+    border: 0;
+    /* que tenga font size */
+    font-size: 14px;
+    /* color del font */
+    color: #5f6368;
+    /* redondear botones */
+    border-radius: 5px;
+    /* que no tenga padding y sea de 15 px de izquierda y derecha */
+    padding: 0 15px;
+    /* manito en el cursor al colocar */
+    cursor: pointer;
+    /* separar botones */
+    margin-right: 15px;
+}
+
+/* sombreado de botones */
+main .main-buttons button:hover {
+    /* color del texto para que se haga negro al colocar el mouse encima */
+    color: #000000;
+    /* colocar sombreado */
+    box-shadow: 0 1px 6px 0 #20212447;
+    /* lo hacemos un poco mas oscuro */
+    border-color: #dfe1e500;
+}
+
+footer {
+    /* ocupar 100% de la pantalla porque es principal como header etc */
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    /* colocar cuadros para controlar la posicion */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+margin: 10px;
+list-style: none;
+display: flex;
+padding-left: 0;
+
+}
+
+/* colocar a la izquierda */
+footer .footer-left {
+    justify-content: left;
+}
+
+/* colocar a la derecha */
+footer .footer-right {
+    justify-content: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
